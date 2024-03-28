@@ -1,7 +1,7 @@
 export default function Education() {
     return (
         <div>
-            <h1 className="text-center">My Education</h1>
+            <h1 className="text-center font-bold text-3xl">My Education</h1>
             <div>
                 <ul className="timeline timeline-vertical">
                     <li>

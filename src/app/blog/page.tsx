@@ -24,21 +24,31 @@ const posts = [
 
 export default function Blog() {
     return (
-        
-        <div className="text-center justify-center">
-            <main className="flex flex-col items-center p-8 lg:p-24 min-h-screen">
-                <div className="z-10 h-50 w-full max-w-5xl items-center justify-between text-xl lg:flex">
-                    <p className="fixed left-0 top-0 flex w-full justify-center pb-6 pt-8 lg:static lg:w-auto bg-gradient-to-b from-white via-white via-65% dark:from-black dark:via-black lg:bg-none">
-                        <a href="/">Get started with Xata and Next.js</a>
-                    </p>
-                    <div className="fixed bottom-0 left-0 flex w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-                        <a href="https://xata.io" className="w-20">
-                            <img src="https://raw.githubusercontent.com/xataio/examples/main/docs/app_logo.svg" />
-                        </a>
-                    </div>
-                </div>
-            </main>
-            <div className="w-full max-w-5xl mt-16">
+
+        // <div className="text-center justify-center">
+        //     <main className="flex flex-col items-center p-8 lg:p-24 min-h-screen">
+        //         <div className="z-10 h-50 w-full max-w-5xl items-center justify-between text-xl lg:flex">
+        //             <p className="fixed left-0 top-0 flex w-full justify-center pb-6 pt-8 lg:static lg:w-auto bg-gradient-to-b from-white via-white via-65% dark:from-black dark:via-black lg:bg-none">
+        //                 <a href="/">Get started with Xata and Next.js</a>
+        //             </p>
+        //             <div className="fixed bottom-0 left-0 flex w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
+        //                 <a href="https://xata.io" className="w-20">
+        //                     <img src="https://raw.githubusercontent.com/xataio/examples/main/docs/app_logo.svg" />
+        //                 </a>
+        //             </div>
+        //         </div>
+        //     </main>
+        <div className=" flex flex-col justify-center items-center">
+            <div className="w-full max-w-5xl ml-32 mt-16">
+                <form>
+                    <input
+                        name="q"
+                        placeholder="Search..."
+                        className="w-full rounded-lg p-2"
+                    />
+                </form>
+            </div>
+            <div className="w-full max-w-5xl ml-32 mt-16">
                 {posts.length === 0 && <p>No blog posts found</p>}
                 {posts.map((post) => (
                     <div key={post.id} className="mb-16">
