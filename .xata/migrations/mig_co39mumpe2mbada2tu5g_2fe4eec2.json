@@ -1,0 +1,16 @@
+{
+  "id": "mig_co39mumpe2mbada2tu5g",
+  "parentID": "mig_co39facfiil5rc1uaf8g",
+  "checksum": "1:2fe4eec2b722216cb771558db754273e3259b76055870dbba3f00397c971e777",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "tags",
+          "type": "multiple"
+        },
+        "table": "projects"
+      }
+    }
+  ]
+}

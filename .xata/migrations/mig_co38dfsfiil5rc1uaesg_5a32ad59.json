@@ -1,0 +1,11 @@
+{
+  "id": "mig_co38dfsfiil5rc1uaesg",
+  "checksum": "1:5a32ad59ea6f343a5525ec8e611cb8a0a1cbdbb0b1b9957f4fcca86b1cadaf71",
+  "operations": [
+    {
+      "addTable": {
+        "table": "blogs"
+      }
+    }
+  ]
+}

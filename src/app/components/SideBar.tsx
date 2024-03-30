@@ -46,15 +46,16 @@ export default function SideBar() {
                 <div className="mx-4 my-4 w-24">
                     <Image src="/pikachu.png" alt="Logo" width={100} height={100} />
                 </div>
-                <div className="flex flex-col mx-4 my-6 space-x-0 space-y-2 w-20">
+                <ul className="flex flex-col mx-4 my-6 space-x-0 space-y-2 w-20">
                     {navItems.map((navItem) => {
                         return (
-                            <div key={navItem.id} className="text-white w-20 btn hover:btn-neutral">
-                                <Link href={navItem.path}>{navItem.name}</Link>
-                            </div>
+                            <li key={navItem.id} className="text-white w-20 btn hover:btn-neutral">
+                                {/* <span><svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" /></svg></span> */}
+                                <span><Link href={navItem.path}>{navItem.name}</Link></span>
+                            </li>
                         )
                     })}
-                </div>
+                </ul>
             </div>
             {/* <ul className="menu bg-base-200 rounded-box">
                 <li>

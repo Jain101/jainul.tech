@@ -1,0 +1,6 @@
+{
+  "databaseURL": "https://Zain-workspace-5rv1ns.us-east-1.xata.sh/db/zaindb",
+  "codegen": {
+    "output": "src/xata.ts"
+  }
+}
