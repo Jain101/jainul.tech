@@ -5,6 +5,8 @@ import type {
   SchemaInference,
   XataRecord,
 } from "@xata.io/client";
+import dotenv from "dotenv";
+dotenv.config();
 
 const tables = [
   {
@@ -46,7 +48,9 @@ export type DatabaseSchema = {
 const DatabaseClient = buildClient();
 
 const defaultOptions = {
-  databaseURL: "https://Zain-workspace-5rv1ns.us-east-1.xata.sh/db/zaindb",
+  databaseURL: process.env.XATA_DATABASE_URL,
+  apiKey: process.env.XATA_API_KEY,
+  branch: process.env.XATA_BRANCH,
 };
 
 export class XataClient extends DatabaseClient<DatabaseSchema> {
@@ -60,6 +64,6 @@ let instance: XataClient | undefined = undefined;
 export const getXataClient = () => {
   if (instance) return instance;
 
-  instance = new XataClient();
+  instance = new XataClient(defaultOptions);
   return instance;
 };
