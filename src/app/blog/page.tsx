@@ -1,6 +1,8 @@
 import Search from '../components/Search'
 import Link from 'next/link'
 import { getXataClient } from "@/xata"
+import dotenv from 'dotenv'
+dotenv.config()
 const xata = getXataClient();
 
 // const posts = [

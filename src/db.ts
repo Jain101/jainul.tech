@@ -1,10 +1,5 @@
 // Generated with CLI
+import dotenv from "dotenv";
 import { getXataClient } from "./xata";
+dotenv.config();
 const xata = getXataClient();
-
-export default async function getAllBlogs() {
-    const records = await xata.db.blogs
-        .select(["description", "content", "title", "slug"])
-        .getAll();
-    console.log(records);
-}

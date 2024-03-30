@@ -1,6 +1,8 @@
 import ProjectCard from '../components/ProjectCard'
 import Search from '../components/Search'
 import { getXataClient } from '@/xata'
+import dotenv from 'dotenv'
+dotenv.config()
 const xata = getXataClient()
 
 // const projects = [
