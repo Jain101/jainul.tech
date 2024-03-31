@@ -6,6 +6,7 @@ import Footer from "./components/Footer";
 import Image from "next/image";
 import Link from "next/link";
 import GitHubButton from "react-github-btn";
+import { Analytics } from '@vercel/analytics/react'
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -36,6 +37,7 @@ export default function RootLayout({
           <main>
             <SideBar />
             {children}
+            <Analytics />
           </main>
           <Footer />
         </div>
