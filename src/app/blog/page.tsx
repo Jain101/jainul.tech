@@ -1,36 +1,34 @@
 import Search from '../components/Search'
 import Link from 'next/link'
-import { getXataClient } from "@/xata"
-import dotenv from 'dotenv'
-dotenv.config()
-const xata = getXataClient();
+// import { getXataClient } from "@/xata"
+// const xata = getXataClient();
 
-// const posts = [
-//     {
-//         id: 1,
-//         title: 'Hello World',
-//         description: 'This is the first blog post',
-//         slug: 'hello-world',
-//         pubDate: new Date('2021-01-01'),
-//     },
-//     {
-//         id: 2,
-//         title: 'Second Post',
-//         description: 'This is the second blog post',
-//         slug: 'second-post',
-//         pubDate: new Date('2021-01-02'),
-//     },
-//     {
-//         id: 3,
-//         title: 'Third Post',
-//         description: 'This is the third blog post',
-//         slug: 'third-post',
-//         pubDate: new Date('2021-01-03'),
-//     },
-// ]
+const posts = [
+    {
+        id: 1,
+        title: 'Hello World',
+        description: 'This is the first blog post',
+        slug: 'hello-world',
+        pubDate: new Date('2021-01-01'),
+    },
+    {
+        id: 2,
+        title: 'Second Post',
+        description: 'This is the second blog post',
+        slug: 'second-post',
+        pubDate: new Date('2021-01-02'),
+    },
+    {
+        id: 3,
+        title: 'Third Post',
+        description: 'This is the third blog post',
+        slug: 'third-post',
+        pubDate: new Date('2021-01-03'),
+    },
+]
 
 export default async function Blog() {
-    const posts = await xata.db.blogs.getAll();
+    // const posts = await xata.db.blogs.getAll();
     return (
         // <div className="text-center justify-center">
         //     <main className="flex flex-col items-center p-8 lg:p-24 min-h-screen">
@@ -61,7 +59,7 @@ export default async function Blog() {
                 {posts.map((post) => (
                     <div key={post.id} className="mb-8">
                         <div className="divider"></div>
-                        <p className="text-xs mb-2 text-purple-950 dark:text-purple-200">{post.xata.createdAt?.toDateString()}</p>
+                        <p className="text-xs mb-2 text-purple-950 dark:text-purple-200">{post.pubDate?.toDateString()}</p>
                         <h2 className="text-2xl mb-2">
                             <Link href={`posts/${post.slug}`}>{post.title}</Link>
                         </h2>
