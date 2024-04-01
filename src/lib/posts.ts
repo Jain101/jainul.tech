@@ -2,7 +2,6 @@ import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
 
-
 const postsDirectory = path.join(process.cwd(), 'src/content/posts');
 
 export type postMetaData = {
@@ -33,7 +32,7 @@ function getAllPostswithID() {
             ...matterResult.data as postMetaData
         };
     })
-    console.log(allPostsData);
+    //console.log(allPostsData);
     return allPostsData;
 }
 
@@ -47,6 +46,6 @@ export function getSortedPostsData() {
             return -1;
         }
     })
-    console.log(sortedPosts);
+    //console.log(sortedPosts);
     return sortedPosts;
 }

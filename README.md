@@ -17,6 +17,11 @@
 11. Created a new file named "posts.ts" in the "src/lib" directry, where I wrote a function to read all the sorted posts from the "src/content/posts" directry.
 12. Everything worked...Hooraayyy🥳
 
+# 01.04.2024
+1. I tried deploying my changes today but it crashed and gave 2 main issues: 1. Prisma Client version mismatch and 2. type issue in lib/posts.ts file.
+2. I fixed the Prisma Client version mismatch issue by deleting everything related to prisma🫠.
+3. And fixed the type issue by creating a new type named postMetaDate in the lib/posts.ts file.
+4. Deployed the changes and everything worked...Hooraayyy🥳
 
 
 
