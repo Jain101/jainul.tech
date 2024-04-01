@@ -4,10 +4,17 @@ import matter from 'gray-matter';
 
 const postsDirectory = path.join(process.cwd(), 'src/content/posts');
 
-function getAllPostswithID() {
+interface postMetaData {
+    id: string;
+    title: string;
+    date: string;
+    summary: string;
+}
+
+function getAllPostswithID(): postMetaData[] {
     // Get file names under /posts
     const fileNames = fs.readdirSync(postsDirectory);
-    const allPostsData = fileNames.map((fileName) => {
+    const allPostsData: postMetaData[] = fileNames.map((fileName) => {
         // Remove ".md" from file name to get id
         const id = fileName.replace(/\.md$/, '');
 
@@ -23,13 +30,13 @@ function getAllPostswithID() {
         return {
             id,
             ...matterResult.data,
-        }
+        } as postMetaData;
     })
-    //console.log(allPostsData);
+    console.log(allPostsData);
     return allPostsData;
 }
 
-export function getSortedPostsData() {
+export function getSortedPostsData(): postMetaData[] {
     // Sort posts by date
     const allPostsData = getAllPostswithID();
     const sortedPosts = allPostsData.sort((a, b) => {
