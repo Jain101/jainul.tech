@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import SideBar from "./components/SideBar";
-import Footer from "./components/Footer";
+import SideBar from "../components/SideBar";
+import Footer from "../components/Footer";
 import Image from "next/image";
 import Link from "next/link";
 import GitHubButton from "react-github-btn";
