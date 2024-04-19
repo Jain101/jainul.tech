@@ -1,6 +1,6 @@
-import { getSortedPostsData } from '@/lib/posts'
+import getSortedPostsData from '@/lib/posts'
 import Search from '../../components/Search'
-import Link from 'next/link'
+import BlogPosts from '@/components/BlogPosts'
 //import { prisma } from '@/lib/prisma'
 
 // const posts = [
@@ -27,7 +27,7 @@ import Link from 'next/link'
 //     },
 // ]
 
-export default async function Blog() {
+export default function Blog() {
     //const posts = await prisma.posts.findMany();
     const posts = getSortedPostsData()
     // return (
@@ -81,26 +81,7 @@ export default async function Blog() {
     return (
         <div className="flex flex-col justify-center items-center">
             <Search />
-            <div className="w-full max-w-5xl ml-32 mt-16">
-                {posts.length === 0 && <p>No blog posts found</p>}
-                {posts.map((post) => (
-                    <div key={post.id} className="mb-8">
-                        <div className="divider"></div>
-                        <p className="text-xs mb-2 text-purple-950 dark:text-purple-200">{post.date}</p>
-                        <h2 className="text-2xl mb-2">
-                            <Link href={`posts/${post.id}`}>{post.title}</Link>
-                        </h2>
-                        <p className="text-purple-950 dark:text-purple-200 mb-5">{post.summary}</p>
-                        <Link
-                            href={`posts/${post.id}`}
-                            className="btn btn-success px-4 py-2 font-semibold text-sm text-white rounded-full shadow-sm w-fit"
-                        >
-                            Read more &rarr;
-                        </Link>
-                    </div>
-
-                ))}
-            </div>
+            <BlogPosts posts={posts}/>
         </div>
     )
 }

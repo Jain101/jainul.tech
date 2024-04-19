@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 export default function ProjectCard({ project }) {
     //console.log(project.image.xata);
     return (
@@ -8,7 +10,7 @@ export default function ProjectCard({ project }) {
                     {project.title}
                     <div className="badge badge-secondary">NEW</div>
                 </h2>
-                <p>{project.description}</p>
+                <p>{project.summary}</p>
                 <div className="card-actions justify-start">
                     {(project.tags || []).map((tag) => {
                         return (

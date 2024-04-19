@@ -1,6 +1,10 @@
 
 
 
+# To-Dos
+- [ ] In changlog, when I click on project name I should be redirected to corresponding project page.
+
+
 
 # Dev Journal
 # 31.03.2024
@@ -23,14 +27,18 @@
 3. And fixed the type issue by creating a new type named postMetaDate in the lib/posts.ts file.
 4. Deployed the changes and everything worked...Hooraayyy🥳
 
-
+# 04.03.2024(midnight)
+1. Had issue with rendering MD files in the blog page, resolved using [react-markdown & tailwind](https://dev.to/acidop/i-built-an-markdown-editor-using-nextjs-and-tailwindcss-46bg)
+2. 
 
 
 # References
 1. [MDX, Next.js, React.js](https://www.joshwcomeau.com/blog/how-i-built-my-blog/)
 2. [Lee blog source code](https://github.com/leerob/leerob.io/tree/main/app)
 3. [Notion, Next.js, React](https://vercel.com/templates/next.js/notion-blog)
-4. 
+4. [Next.js blog tutorial](https://nextjs.org/learn-pages-router/basics/data-fetching/request-time)
+5. [Next-api-routes prisma example](https://github.com/prisma/prisma-examples/tree/latest/typescript/rest-nextjs-api-routes)
+6. https://developer.chrome.com/docs/capabilities/browser-fs-access
 
 
 

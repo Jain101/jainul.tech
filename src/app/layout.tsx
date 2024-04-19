@@ -32,7 +32,7 @@ export default function RootLayout({
           <header>
             {/* <!-- Place this tag where you want the button to render. --> */}
             {/* <GitHubButton href="https://github.com/Jain101" data-color-scheme="no-preference: light; light: light; dark: dark;" data-size="large" aria-label="Follow @Jain101 on GitHub">Follow @Jain101</GitHubButton> */}
-            <a className="github-button" href="https://github.com/Jain101" data-color-scheme="no-preference: light; light: light; dark: dark;" data-size="large" aria-label="Follow @Jain101 on GitHub">Follow @Jain101</a>
+            {/* <a className="github-button" href="https://github.com/Jain101" data-color-scheme="no-preference: light; light: light; dark: dark;" data-size="large" aria-label="Follow @Jain101 on GitHub">Follow @Jain101</a> */}
           </header>
           <main>
             <SideBar />
