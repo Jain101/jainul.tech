@@ -36,7 +36,7 @@ function getAllUpdateswithID() {
             ...matterResult.data as updateMetaData
         };
     })
-    console.log(allUpdatesData);
+    //console.log(allUpdatesData);
     return allUpdatesData;
 }
 
@@ -50,6 +50,6 @@ export function getSortedUpdatesData() {
             return -1;
         }
     })
-    console.log(sortedUpdates);
+    //console.log(sortedUpdates);
     return sortedUpdates;
 }

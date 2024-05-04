@@ -33,7 +33,7 @@ function getAllProjectswithID() {
             ...matterResult.data as projectMetaData
         };
     })
-    console.log(allProjectsData);
+    //console.log(allProjectsData);
     return allProjectsData;
 }
 
@@ -47,6 +47,6 @@ export function getSortedProjectsData() {
             return -1;
         }
     })
-    console.log(sortedProjects);
+    //console.log(sortedProjects);
     return sortedProjects;
 }
