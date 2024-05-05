@@ -63,7 +63,7 @@ function Courses() {
                 </div>
                 <div className="card w-96 shadow-xl image-full rounded  dark:border-neutral-700 dark:bg-neutral-800">
                     <div className="card-body bg-neutral-600">
-                        <h2 className="card-title"><img src="/ai.png" width={50} height={50} alt="" />Artificial Intelligence and Machine Learning</h2>
+                        <h2 className="card-title"><img src="/ai.png" width={50} height={50} alt="AIML" />Artificial Intelligence and Machine Learning</h2>
                         <p>If a dog chews shoes whose shoes does he choose?</p>
                     </div>
                 </div>
