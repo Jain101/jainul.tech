@@ -10,7 +10,6 @@ export default function Display({ params }: { params: { id: string } }) {
     if (!post) return (
         <div className='text-center'>No Post with id: {id}</div>
     )
-    //console.log('Heyyyyyy-------!!!!!!', typeof post.content);
     return (
         <div className='text-center w-full max-w-5xl ml-32 mt-16'>
             {/* <SyntaxHighlighter language={"javascript"} style={''}> */}

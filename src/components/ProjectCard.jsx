@@ -1,7 +1,5 @@
-import Image from 'next/image'
 
 export default function ProjectCard({ project }) {
-    //console.log(project.image.xata);
     return (
         <div className="card w-80 bg-base-100 shadow-xl">
             <figure><img src={project.img} alt={project.title} /></figure>

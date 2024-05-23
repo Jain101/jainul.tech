@@ -1,8 +1,6 @@
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
-import axios from 'axios';
-//import find from 'list-files'
 
 const postsDirectory = path.join(process.cwd(), 'src/content/posts');
 
@@ -12,13 +10,6 @@ export type postMetaData = {
     date: string;
     summary: string;
 }
-
-// find(function ({result} : {result: string[]}) {
-//     console.log(result);
-// }, {
-//     dir: postsDirectory,
-//     name: 'post'
-// });
 
 export function getAllPostswithID() {
     // Get file names under /posts

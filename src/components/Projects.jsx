@@ -1,6 +1,6 @@
 import ProjectCard from "./ProjectCard"
 
-export default function ProjectsCards({projects}) {
+export default function Projects({ projects }) {
     return (
         <div className='w-full max-w-5xl ml-32 mt-16'>
             <div className="grid grid-cols-3 gap-4">

@@ -3,14 +3,14 @@ function Courses() {
         <>
             <h1 className='text-center font-bold text-3xl my-4 p-4'> College Courses</h1>
             <div className='flex flex-row flex-wrap gap-6 justify-center'>
-                <div className="card w-96 bg-base-100 shadow-xl image-full">
+                {/* <div className="card w-96 bg-base-100 shadow-xl image-full">
                     <figure><img src="/dsa.png" alt="DSA" /></figure>
                     <div className="card-body">
                         <h2 className="card-title">Data Structures and Algorithms</h2>
                         <p>If a dog chews shoes whose shoes does he choose?</p>
                     </div>
-                </div>
-                <div className="card w-96 bg-base-100 shadow-xl image-full">
+                </div> */}
+                {/* <div className="card w-96 bg-base-100 shadow-xl image-full">
                     <figure><img src="/oops.png" alt="OOPS" /></figure>
                     <div className="card-body">
                         <h2 className="card-title">Object Oriented Programming and Design</h2>
@@ -64,14 +64,14 @@ function Courses() {
                         <h2 className="card-title"><img src="/ai.png" width={50} height={50} alt="AIML" />Artificial Intelligence and Machine Learning</h2>
                         <p>If a dog chews shoes whose shoes does he choose?</p>
                     </div>
-                </div>
-                <div className="card w-96 bg-base-100 shadow-xl image-full">
+                </div> */}
+                {/* <div className="card w-96 bg-base-100 shadow-xl image-full">
                     <figure><img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
                     <div className="card-body">
                         <h2 className="card-title">Data Science</h2>
                         <p>If a dog chews shoes whose shoes does he choose?</p>
                     </div>
-                </div>
+                </div> */}
             </div>
         </>
     )

@@ -1,10 +1,9 @@
-import Image from "next/image"
 
 function Skills() {
     return (
         <>
             <h1 className="text-center font-bold text-3xl my-4 p-2">Skills</h1>
-            <div className="flex flex-row gap-6 flex-wrap justify-center">
+            {/* <div className="flex flex-row gap-6 flex-wrap justify-center">
                 <Image src="/react.png" alt='React' width={150} height={150} />
                 <div class="grid grid-cols-4 gap-4">
                     <div>1</div>
@@ -35,7 +34,7 @@ function Skills() {
                         </a>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </>
     )
 }

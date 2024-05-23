@@ -3,8 +3,6 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import SideBar from "../components/SideBar";
 import Footer from "../components/Footer";
-import Image from "next/image";
-import Link from "next/link";
 import GitHubButton from "react-github-btn";
 import { Analytics } from '@vercel/analytics/react'
 
@@ -25,14 +23,10 @@ export default function RootLayout({
     <html lang="en" data-theme="forest">
       <head>
         <title>{metadata.title as React.ReactNode}</title>
-        {/* <script async defer src="https://buttons.github.io/buttons.js"></script> */}
       </head>
       <body>
         <div className="flex flex-col h-screen justify-between">
           <header>
-            {/* <!-- Place this tag where you want the button to render. --> */}
-            {/* <GitHubButton href="https://github.com/Jain101" data-color-scheme="no-preference: light; light: light; dark: dark;" data-size="large" aria-label="Follow @Jain101 on GitHub">Follow @Jain101</GitHubButton> */}
-            {/* <a className="github-button" href="https://github.com/Jain101" data-color-scheme="no-preference: light; light: light; dark: dark;" data-size="large" aria-label="Follow @Jain101 on GitHub">Follow @Jain101</a> */}
           </header>
           <main>
             <SideBar />
